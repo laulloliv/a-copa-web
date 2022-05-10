@@ -1,0 +1,37 @@
+header{
+  background-color: #97FB57;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #000000;
+    .logo-logo{
+      padding: 0.03em 0.2em 0em 0.2em;
+      border-right: 0.1em solid black;
+      border-left: 0.1em solid black;
+      border-top: 0.1em solid black;
+    }
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  // margin: 1em 0em 1em 0em;
+  padding: 0.45em;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 400;
+
+  p{
+    margin-bottom: -0.1em;
+  }
+}
