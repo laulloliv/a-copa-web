@@ -1,13 +1,7 @@
-import Carrossel from './Componentes/Carrossel'
-import Menu from './Componentes/Menu'
+import Home from './Pages/home'
 
 function App() {
-  return (
-    <>
-      <Menu></Menu>
-      <Carrossel></Carrossel>
-    </>
-  )
+  return <Home></Home>
 }
 
 export default App
