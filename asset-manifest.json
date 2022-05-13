@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/a-copa-web/static/css/main.6c02b1a2.css",
-    "main.js": "/a-copa-web/static/js/main.e89f298d.js",
-    "index.html": "/a-copa-web/index.html",
-    "main.6c02b1a2.css.map": "/a-copa-web/static/css/main.6c02b1a2.css.map",
-    "main.e89f298d.js.map": "/a-copa-web/static/js/main.e89f298d.js.map"
+    "main.css": "/static/css/main.6c02b1a2.css",
+    "main.js": "/static/js/main.b44f6752.js",
+    "index.html": "/index.html",
+    "main.6c02b1a2.css.map": "/static/css/main.6c02b1a2.css.map",
+    "main.b44f6752.js.map": "/static/js/main.b44f6752.js.map"
   },
   "entrypoints": [
     "static/css/main.6c02b1a2.css",
-    "static/js/main.e89f298d.js"
+    "static/js/main.b44f6752.js"
   ]
 }
