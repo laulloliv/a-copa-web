@@ -9,10 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/Estatisticas" element={<Estatisticas />}></Route>
-        <Route path="/CopaDe2022" element={<CopaDe2022 />}></Route>
-        <Route path="/Quizz" element={<Quizz />}></Route>
+        <Route path="https://laulloliv.github.io/a-copa-web/" element={<Home />}></Route>
+        <Route path="https://laulloliv.github.io/a-copa-web/Estatisticas" element={<Estatisticas />}></Route>
+        <Route path="https://laulloliv.github.io/a-copa-web/CopaDe2022" element={<CopaDe2022 />}></Route>
+        <Route path="https://laulloliv.github.io/a-copa-web/Quizz" element={<Quizz />}></Route>
       </Routes>
     </BrowserRouter>
   )
