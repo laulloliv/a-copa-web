@@ -1,10 +1,14 @@
+.section-camp{
+  background-color: rgba($color: #121212, $alpha: 0.8);
+  height: 30em;
+}
+
 .sessao-campeas{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 4em;
-  background-color: rgba($color: #121212, $alpha: 0.8);
-  height: 28em;
+  // margin-top: 4em;
+  // background-color: rgba($color: #121212, $alpha: 0.8);
 }
 
 .title-campeas{
@@ -14,17 +18,21 @@
   justify-content: center;
   color: #ffffff;
   background-color: #121212;
-  margin-left: -22.5em;
-  height: 28em;
-  width: 35em;
+  margin-left: -3em;
+  height: 30em;
+  width: 37em;
 }
 
 .title{
-  margin-left: 6em;
+  margin-left: 5em;
+  margin-top: -1em !important;
+  font-size: 2em;
 }
 
 #title-2{
-  margin-left: 10.6em;
+  margin-left: 9.2em;
+  margin-top: -2.3em !important;
+  font-size: 1.1em;
 
   &:hover{
     color: #97FB57;
@@ -35,10 +43,12 @@
 .show-top-3{
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  // margin-top: 2em;
+  margin-left: 16em;
   color: #ffffff;
 
   h3{
+    margin-bottom: 2em;
     border-left: 0.1em solid #ffffff;
     padding-left: 0.7em;
     margin-left: -3em;
@@ -63,7 +73,9 @@ li{
   margin-bottom: 4em;
   
   h2{
-    margin-top: 1em;
+    margin-top: -1em;
+    align-self: flex-start;
+    margin-bottom: 2em;
     margin-left: 2em;
   }
 }
@@ -71,9 +83,10 @@ li{
 .anos-copa{
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
+  width: 75em;
+  // margin-top: 3em;
+  // margin-left: 3em;
+  // margin-right: 3em;
 
   .linha-1{
     display: flex ;
@@ -107,18 +120,7 @@ li{
     align-items: center;
     justify-content: flex-start;
     margin-top: 2.5em;
-    margin-left: 3.8em;
-    gap: 3.7em;
+    margin-left: 3.4em;
+    gap: 3.4em;
   }
 }
-
-
-// footer{
-//   background-color: #97FB57;
-//   height: 6em;
-
-//   div{    
-//     background-color: #121212;
-//     height: 2.3em;
-//   }
-// }

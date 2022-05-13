@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import Text from '../Estilos/text'
 import './style.scss'
 
 function Menu() {
@@ -14,11 +16,38 @@ function Menu() {
         </div>
       </div>
       <div className="menu">
-        <p>Linha do Tempo</p>
-        <p>Estatísticas</p>
-        <p>Início</p>
-        <p>Copa de 2022</p>
-        <p>Quizz</p>
+        <Text>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <p
+              onClick={e => {
+                e.preventDefault()
+                window.location.replace('/#linha_tempo')
+              }}
+            >
+              Linha do Tempo
+            </p>
+          </Link>
+        </Text>
+        <Text>
+          <Link to="/Estatisticas" style={{ textDecoration: 'none' }}>
+            <p>Estatísticas</p>
+          </Link>
+        </Text>
+        <Text>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <p>Início</p>
+          </Link>
+        </Text>
+        <Text>
+          <Link to="/CopaDe2022" style={{ textDecoration: 'none' }}>
+            <p>Copa de 2022</p>
+          </Link>
+        </Text>
+        <Text>
+          <Link to="/Quizz" style={{ textDecoration: 'none' }}>
+            <p>Quizz</p>
+          </Link>
+        </Text>
       </div>
     </header>
   )

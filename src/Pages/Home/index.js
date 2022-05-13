@@ -1,6 +1,8 @@
 import Carrossel from '../../Componentes/Carrossel'
 import Menu from '../../Componentes/Menu'
 import Footer from '../../Componentes/Footer'
+import { Link } from 'react-router-dom'
+import Text from '../../Componentes/Estilos/text'
 import { Card, Card22 } from '../../Componentes/Estilos/card'
 import './style.scss'
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
@@ -11,13 +13,17 @@ function Home() {
       <Menu></Menu>
       <Carrossel></Carrossel>
       <hr></hr>
-      <section>
+      <section className="section-camp">
         <div className="sessao-campeas">
           <div className="title-campeas">
             <h3 className="title">Maiores Campeães</h3>
-            <p className="title" id="title-2">
-              Confira todas as Estatísticas
-            </p>
+            <Text>
+              <Link to="/Estatisticas" style={{ textDecoration: 'none' }}>
+                <p className="title" id="title-2">
+                  Confira todas as Estatísticas
+                </p>
+              </Link>
+            </Text>
           </div>
           <div className="show-top-3">
             <h3>Top 3</h3>
@@ -114,7 +120,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="linha-do-tempo">
+      <section className="linha-do-tempo" id="linha_tempo">
         <hr></hr>
         <h2>Linha do Tempo</h2>
         <div className="anos-copa">
