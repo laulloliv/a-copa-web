@@ -7,11 +7,16 @@ export const Card = styled.div`
   background-color: #abcb2d;
   width: 7em;
   height: 2em;
+  cursor: pointer;
 
   p {
     margin-top: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+  }
+
+  &:hover {
+    background-color: rgba(171, 203, 45, 0.85);
   }
 `
 

@@ -1,5 +1,7 @@
 import './style.scss'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import Quizz from '..'
 
 export default function ViewQuestions() {
   const [question1, setQuestion1] = useState(true)
@@ -8,8 +10,16 @@ export default function ViewQuestions() {
   const [resp1, setResp1] = useState('')
   const [resp2, setResp2] = useState('')
   const [resp3, setResp3] = useState('')
+  const navigate = useNavigate()
 
   function Resultado() {
+    function goToHome() {
+      navigate('/')
+    }
+    function goToQuizz() {
+      return <Quizz></Quizz>
+    }
+
     function Result0() {
       return (
         <section>
@@ -22,8 +32,10 @@ export default function ViewQuestions() {
               height="150em"
             ></img>
             <div className="buttons">
-              <button onClick={() => console.log('Beleza')}>Reiniciar</button>
-              <button onClick={() => console.log('Beleza')}>Início</button>
+              <button onClick={() => window.location.reload()}>
+                Reiniciar
+              </button>
+              <button onClick={() => goToHome()}>Início</button>
             </div>
           </div>
         </section>
@@ -42,16 +54,10 @@ export default function ViewQuestions() {
               height="150em"
             ></img>
             <div className="buttons">
-              <button
-                onClick={() => {
-                  setQuestion1(true)
-                  setQuestion2(true)
-                  setQuestion3(true)
-                }}
-              >
+              <button onClick={() => window.location.reload()}>
                 Reiniciar
               </button>
-              <button onClick={() => console.log('Beleza')}>Início</button>
+              <button onClick={() => goToHome()}>Início</button>
             </div>
           </div>
         </section>
@@ -70,8 +76,10 @@ export default function ViewQuestions() {
               height="150em"
             ></img>
             <div className="buttons">
-              <button onClick={() => console.log('Beleza')}>Reiniciar</button>
-              <button onClick={() => console.log('Beleza')}>Início</button>
+              <button onClick={() => window.location.reload()}>
+                Reiniciar
+              </button>
+              <button onClick={() => goToHome()}>Início</button>
             </div>
           </div>
         </section>
@@ -90,8 +98,10 @@ export default function ViewQuestions() {
               height="150em"
             ></img>
             <div className="buttons">
-              <button onClick={() => console.log('Beleza')}>Reiniciar</button>
-              <button onClick={() => console.log('Beleza')}>Início</button>
+              <button onClick={() => window.location.reload()}>
+                Reiniciar
+              </button>
+              <button onClick={() => goToHome()}>Início</button>
             </div>
           </div>
         </section>
@@ -103,7 +113,7 @@ export default function ViewQuestions() {
     if (resp1 == 'França') {
       contador += 1
     }
-    if (resp2 == 'Brasil') {
+    if (resp2 == 'Italia') {
       contador += 1
     }
     if (resp3 == 'Brasil') {
@@ -198,19 +208,19 @@ export default function ViewQuestions() {
     return (
       <section>
         <div className="card-quest">
-          <p>Qual a seleção com mais copas?</p>
+          <p>Qual a seleção vencedora da final de 1998?</p>
 
           <div className="input-quest">
             <label>
               <input
                 type="radio"
-                value={'Itália'}
+                value={'Italia'}
                 checked={op1}
                 onChange={() => {
                   setop1(!op1)
                   setop2(false)
                   setop3(false)
-                  setResp2('Itália')
+                  setResp2('Italia')
                   console.log(resp2)
                 }}
               />
