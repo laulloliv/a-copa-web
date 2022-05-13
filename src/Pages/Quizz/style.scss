@@ -1,0 +1,36 @@
+ .card-questions{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 20em;
+   width: 40em;
+   border-radius: 1em;
+   background-color: rgba(18, 18, 18, 0.80);
+   color: #ffffff;
+
+   p{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 500;
+     font-size: 1.2em;
+     margin: 2em;
+     margin-bottom: -0.4em;
+   }
+
+   button{
+     background-color: #97FB57;
+     padding: 0.2em;
+     padding-left: 1em;
+     padding-right: 1em;
+     border-radius: 0.2em;
+     font-weight: 600;
+     margin: 2em;
+
+     &:hover{
+      background-color: rgba(151, 251, 87, 0.8);
+     }
+   }
+ }
+
+//  ---------------------------------------
+

@@ -1,0 +1,28 @@
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  
+  h4{
+    align-self: flex-start;
+    margin-left: 8em;
+    margin-bottom: 1.5em;
+    padding-left: 0.7em;
+    border-left: 0.08em solid #121212;
+  }
+}
+
+.title{
+    margin-left: 7em;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+}
+
+.the-best{
+  margin-bottom: 6em;
+}
+

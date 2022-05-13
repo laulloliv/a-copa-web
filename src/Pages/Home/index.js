@@ -1,7 +1,7 @@
-import Carrossel from '../Componentes/Carrossel'
-import Menu from '../Componentes/Menu'
-import Footer from '../Componentes/Footer'
-import { Card, Card22 } from '../Componentes/Estilos/card'
+import Carrossel from '../../Componentes/Carrossel'
+import Menu from '../../Componentes/Menu'
+import Footer from '../../Componentes/Footer'
+import { Card, Card22 } from '../../Componentes/Estilos/card'
 import './style.scss'
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 

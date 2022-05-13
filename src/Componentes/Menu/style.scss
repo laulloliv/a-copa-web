@@ -32,5 +32,10 @@ header{
 
   p{
     margin-bottom: -0.1em;
+    cursor: pointer;
+    
+    &:hover{
+      color: #97FB57;
+    }
   }
 }
