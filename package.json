@@ -2,7 +2,7 @@
   "name": "acopa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://laulloliv.github.io/a-copa-web/",
+  "homepage": "https://laulloliv.github.io/acopa/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
