@@ -301,14 +301,14 @@ function Home() {
             ></PopoverCard>
             <ArrowForwardRoundedIcon></ArrowForwardRoundedIcon>
 
-            <Card22>
-              <Link
-                to="/CopaDe2022"
-                style={{ textDecoration: 'none', color: 'black' }}
-              >
+            <Link
+              to="/CopaDe2022"
+              style={{ textDecoration: 'none', color: 'black' }}
+            >
+              <Card22>
                 <p>2022</p>
-              </Link>
-            </Card22>
+              </Card22>
+            </Link>
           </div>
         </div>
       </section>
