@@ -11,7 +11,7 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 function Home() {
   return (
     <>
-      <Menu></Menu>
+      <Menu boolean={true}></Menu>
       <Carrossel></Carrossel>
       <hr></hr>
       <section className="section-camp">
@@ -302,7 +302,7 @@ function Home() {
             <ArrowForwardRoundedIcon></ArrowForwardRoundedIcon>
 
             <Link
-              to="/CopaDe2022"
+              to="/CopaDe2022/#header22'"
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <Card22>

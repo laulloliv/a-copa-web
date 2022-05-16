@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Text from '../Estilos/text'
 import './style.scss'
 
-function Menu() {
+function Menu(props) {
   return (
     <header>
       <div className="logo">
@@ -16,8 +16,8 @@ function Menu() {
         </div>
       </div>
       <div className="menu">
-        <Text>
-          <Link to="/" style={{ textDecoration: 'none' }}>
+        {props.boolean ? (
+          <Text>
             <p
               onClick={e => {
                 e.preventDefault()
@@ -26,8 +26,15 @@ function Menu() {
             >
               Linha do Tempo
             </p>
-          </Link>
-        </Text>
+          </Text>
+        ) : (
+          <Text>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <p>Linha do Tempo</p>
+            </Link>
+          </Text>
+        )}
+
         <Text>
           <Link to="/Estatisticas" style={{ textDecoration: 'none' }}>
             <p>Estatísticas</p>
