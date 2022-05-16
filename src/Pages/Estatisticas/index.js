@@ -6,7 +6,7 @@ import { TableArtilheiros, TableBestPlayers } from '../../Componentes/Table'
 function Estatisticas() {
   return (
     <>
-      <Menu></Menu>
+      <Menu boolean={false}></Menu>
       <div className="title">
         <h2>Estatísticas</h2>
       </div>

@@ -23,7 +23,7 @@ export function Quizz() {
 
   return (
     <>
-      <Menu></Menu>
+      <Menu boolean={false}></Menu>
       <div className="title">
         <h2>Quizz</h2>
       </div>

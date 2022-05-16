@@ -16,9 +16,6 @@ export default function ViewQuestions() {
     function goToHome() {
       navigate('/')
     }
-    function goToQuizz() {
-      return <Quizz></Quizz>
-    }
 
     function Result0() {
       return (
@@ -32,7 +29,7 @@ export default function ViewQuestions() {
               height="150em"
             ></img>
             <div className="buttons">
-              <button onClick={() => window.location.reload()}>
+              <button onClick={() => window.location.replace('/Quizz')}>
                 Reiniciar
               </button>
               <button onClick={() => goToHome()}>Início</button>
@@ -149,7 +146,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Alemanha'}
-                checked={op1}
+                checked={resp1 == 'Alemanha'}
                 onChange={() => {
                   setop1(!op1)
                   setop2(false)
@@ -164,7 +161,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Argentina'}
-                checked={op2}
+                checked={resp1 == 'Argentina'}
                 onChange={() => {
                   setop1(false)
                   setop2(!op2)
@@ -179,7 +176,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'França'}
-                checked={op3}
+                checked={resp1 == 'França'}
                 onChange={() => {
                   setop1(false)
                   setop2(false)
@@ -215,7 +212,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Italia'}
-                checked={op1}
+                checked={resp2 == 'Italia'}
                 onChange={() => {
                   setop1(!op1)
                   setop2(false)
@@ -230,7 +227,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'México'}
-                checked={op2}
+                checked={resp2 == 'México'}
                 onChange={() => {
                   setop1(false)
                   setop2(!op2)
@@ -245,7 +242,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Brasil'}
-                checked={op3}
+                checked={resp2 == 'Brasil'}
                 onChange={() => {
                   setop1(false)
                   setop2(false)
@@ -281,7 +278,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Uruguai'}
-                checked={op1}
+                checked={resp3 == 'Uruguai'}
                 onChange={() => {
                   setop1(!op1)
                   setop2(false)
@@ -296,7 +293,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'México'}
-                checked={op2}
+                checked={resp3 == 'México'}
                 onChange={() => {
                   setop1(false)
                   setop2(!op2)
@@ -311,7 +308,7 @@ export default function ViewQuestions() {
               <input
                 type="radio"
                 value={'Brasil'}
-                checked={op3}
+                checked={resp3 == 'Brasil'}
                 onChange={() => {
                   setop1(false)
                   setop2(false)

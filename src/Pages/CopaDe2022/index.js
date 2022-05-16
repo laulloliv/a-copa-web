@@ -5,8 +5,8 @@ import Footer from '../../Componentes/Footer'
 function CopaDe2022() {
   return (
     <>
-      <Menu></Menu>
-      <div className="title">
+      <Menu boolean={false}></Menu>
+      <div className="title" id="header22">
         <h2>Copa de 2022</h2>
       </div>
       <section>
