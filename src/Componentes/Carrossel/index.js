@@ -1,5 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Link } from 'react-router-dom'
+import { Text_Slide } from '../Estilos/text'
+
 import './style.scss'
 
 function Carrossel() {
@@ -13,8 +16,14 @@ function Carrossel() {
           height="600px"
         />
         <Carousel.Caption className="title-slide-1">
-          <h3>Copa do Mundo:</h3>
-          <p>Confira as Estatísticas</p>
+          <Text_Slide>
+            <Link to="/Estatisticas" style={{ textDecoration: 'none' }}>
+              <div className="slide-1">
+                <h3>Copa do Mundo:</h3>
+                <p>Confira as Estatísticas</p>
+              </div>
+            </Link>
+          </Text_Slide>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -26,8 +35,14 @@ function Carrossel() {
         />
 
         <Carousel.Caption>
-          <h3>Copa do Mundo 2022</h3>
-          <p>Confira as Chaves!</p>
+          <Text_Slide>
+            <Link to="/CopaDe2022" style={{ textDecoration: 'none' }}>
+              <div className="slide-2">
+                <h3>Copa do Mundo 2022</h3>
+                <p>Confira as Chaves!</p>
+              </div>
+            </Link>
+          </Text_Slide>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,11 +54,16 @@ function Carrossel() {
         />
 
         <Carousel.Caption>
-          <h3>Quizz</h3>
-          <p>
-            Você conhece tudo sobre Copa do Mundo? Teste agora seus
-            conhecimentos com o Quizz do A Copa!
-          </p>
+          <Text_Slide>
+            <Link to="/Quizz" style={{ textDecoration: 'none' }}>
+              <div className="slide-3">
+                <p>
+                  Você conhece tudo sobre Copa do Mundo? Teste agora seus
+                  conhecimentos com o Quizz do A Copa!
+                </p>
+              </div>
+            </Link>
+          </Text_Slide>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

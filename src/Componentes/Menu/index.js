@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Text from '../Estilos/text'
+import { Text } from '../Estilos/text'
 import './style.scss'
 
 function Menu(props) {

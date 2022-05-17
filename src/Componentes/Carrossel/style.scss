@@ -1,16 +1,84 @@
+
 .body-carrossel{
   margin: 2em 2em 0em 2em;
 }
 
-// .title-slide-1{
-//   background-color: #ff0000;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-start;
-//   justify-content: flex-start;
+.slide-1{
+  background-color: #c20000;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 34em;
+  height: 5em;
+  margin-left: -12em;
+  margin-top: -6.5em;
+  cursor: pointer;
 
-//   p{
-//     margin-top: 0.5em;
-//     font-size: 1.5em;
-//   }
-// }
+  &:hover{
+    background-color: #9e0101;
+  }
+  
+h3{
+  margin: auto;
+}
+  p{
+    margin: auto;
+    margin-left: -2em;
+    margin-top: 1.25em;
+    font-size: 1.3em;
+  }
+}
+
+
+.slide-2{
+  background-color: #dfa701;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  max-width: 34em;
+  height: 5em;
+  margin-left: 34.5em;
+  margin-right: -20em;
+  margin-top: -6.5em;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #b38600;
+  }
+  
+h3{
+  margin: auto;
+}
+  p{
+    margin: auto;
+    margin-left: -1.5em;
+    margin-top: 1.25em;
+    font-size: 1.3em;
+  }
+}
+
+
+.slide-3{
+  background-color: #023E73;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 34em;
+  height: 15em;
+  margin-left: -1.5em;
+  margin-top: -24em;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #01325c;
+  }
+  
+  p{
+    margin: auto;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+}
