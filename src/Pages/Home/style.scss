@@ -1,38 +1,44 @@
 .section-camp{
-  background-color: rgba($color: #121212, $alpha: 0.8);
-  height: 30em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 
-.sessao-campeas{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  // margin-top: 4em;
-  // background-color: rgba($color: #121212, $alpha: 0.8);
-}
 
 .title-campeas{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   color: #ffffff;
   background-color: #121212;
-  margin-left: -3em;
   height: 30em;
-  width: 37em;
-}
+  width: 40%;
 
-.title{
-  margin-left: 5em;
-  margin-top: -1em !important;
-  font-size: 2em;
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3{
+    margin: auto;
+    margin-top: -1em !important;
+    font-size: 2em; 
+  }
+  p{
+    margin: auto;
+    font-size: 1.1em;
+    // margin-top: -2em !important;
+  }
+
 }
 
 #title-2{
-  margin-left: 9.2em;
-  margin-top: -2.3em !important;
-  font-size: 1.1em;
 
   &:hover{
     color: #97FB57;
@@ -42,34 +48,50 @@
 
 .show-top-3{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  // margin-top: 2em;
-  margin-left: 16em;
+  background-color: rgba($color: #121212, $alpha: 0.8);
   color: #ffffff;
+  height: 30em;
+  width: 60%;
 
   h3{
-    margin-bottom: 2em;
     border-left: 0.1em solid #ffffff;
+    margin:auto;
+    align-self: flex-start;
     padding-left: 0.7em;
-    margin-left: -3em;
+    margin-left: 6em;
+
   }
 }
 
-ul{
-  margin-top: 1em;
-  margin-left: -3em;
+.d{
+margin-left: -15em;
+
+hr{
+  margin-left: -15em;
+  width: 16em;
+}
+  .li-pais{
+    margin:auto;
+    margin-left: 25em;
+    margin-top: 2em !important;
+  }
+  
+  .lista-trofeu{
+    margin-top: 1em;
+    margin-left: -15em;
+    width: 16em;
+    }
+  .li-trofeu{
+   display: flex;
+  }
 }
 
-li{
-  margin-top: 1em;
-}
-
-.li-trofeu{
- display: flex;
-}
 
 .linha-do-tempo{
-  margin-top: 2em;
+  margin-top: -1em;
   margin-bottom: 4em;
   
   h2{
@@ -82,45 +104,74 @@ li{
 
 .anos-copa{
   display: flex;
-  flex-direction: column;
-  width: 75em;
-  // margin-top: 3em;
-  // margin-left: 3em;
-  // margin-right: 3em;
+  flex-direction: row;
+  margin-left: 5em;
+  max-width:65em;
+  min-width: 280px;
+  flex-wrap: wrap;
+  gap: 2.5em;
 
-  .linha-1{
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .linha-2{
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2.5em;
-  }
-
-  .linha-3{
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2.5em;
-  }
-
-  .linha-4{
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2.5em;
-  }
-
-  .linha-5{
-    display: flex ;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 2.5em;
-    margin-left: 3.4em;
-    gap: 3.4em;
-  }
 }
+
+main{
+  background-color: #ffffff;
+}
+
+
+//----------Responsividade
+
+@media only screen and (max-width: 1200px) {
+  .anos-copa{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 60em;
+    gap: 2em;
+    .arrow{
+      display: none;
+    }
+  }
+
+}
+@media only screen and (max-width: 1150px) {
+  .show-top-3{
+    .d{
+     margin-left: -7em;
+    }
+  }
+    
+}
+
+@media only screen and (max-width: 900px) {
+  .section-camp{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .title-campeas{
+      height: 10em;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      // margin: auto;
+
+      h3{
+        align-self: center;
+        margin-top: 0.5em !important;
+        margin-left: -0.1em;
+        margin-right: -1em;
+      }
+      p{
+        margin-left: -1em !important;
+        margin-right: -2.7em;
+      }
+    }
+
+    .show-top-3{
+      width:100%;
+    }
+  }
+    
+}
+

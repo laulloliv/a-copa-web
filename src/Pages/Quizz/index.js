@@ -5,7 +5,7 @@ import ViewQuestions from './Questions'
 
 export function Quizz() {
   return (
-    <>
+    <main>
       <Menu boolean={false}></Menu>
       <div className="title">
         <h2>Quizz</h2>
@@ -14,7 +14,7 @@ export function Quizz() {
       <ViewQuestions></ViewQuestions>
 
       <Footer></Footer>
-    </>
+    </main>
   )
 }
 

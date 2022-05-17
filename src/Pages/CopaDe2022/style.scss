@@ -1,3 +1,6 @@
+main{
+  margin: auto;
+}
 
 section{
   display: flex;
@@ -7,17 +10,20 @@ section{
   margin-top: 1.5em;
   margin-bottom: 3em;
   
+div{
+
   h4{
     align-self: flex-start;
-    margin-left: 8em;
+    margin-left: -3em;
     margin-bottom: 1.5em;
     padding-left: 0.7em;
     border-left: 0.08em solid #121212;
   }
 
-  ul{
-    margin-right: 14em;
+  .lista-horario{
+    
     margin-top: -1.5em;
+    width: 40em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     
@@ -27,21 +33,81 @@ section{
       margin-left: 1em;    
     }
 
-    .obs{
+    #obs{
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-style: italic;
     }
   }
 
-  .lista-horario{
-    margin-left: -8em;
+  .itens-lista{
+    width: 38em;
+    margin-left: -2em;
+  }
+
+}
+}
+
+.lista{
+  margin-left: -10em;
+}
+
+h2{
+    align-self: flex-start !important;
+    margin-left: 2em;
+    margin-top: 1em !important;
+    margin-bottom: 1.5em !important;
+}
+
+main{
+  background-color: #ffffff;
+}
+
+//---------Responsividade
+
+@media only screen and (max-width: 1150px) {
+  #tabela{
+    height: 20em;
+  }
+
+  h2{
+    margin: auto;
+  }
+ 
+  div{
+   h4{
+     
+   }
+   .lista-horario{
+     width: 20em !important;
+     li{
+       width: 32em;
+     }
+   }
   }
 }
 
-.title{
-    margin-left: 3em;
-    margin-top: 2em !important;
-    margin-bottom: 1.5em !important;
+@media only screen and (max-width: 900px) {
+  #tabela{
+    height: 12em;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+ h2{
+   margin: auto;
+ }
+
+ div{
+
+  .lista-horario{
+    width: 6em !important;
+    li{
+      width: 19em;
+    }
+  }
+ }
 }
 

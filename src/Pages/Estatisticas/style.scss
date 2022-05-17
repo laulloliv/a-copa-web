@@ -30,3 +30,20 @@ section{
   margin-bottom: 6em;
 }
 
+main{
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .the-best{
+    align-items: center;
+    justify-content: center;
+    h4{
+      margin:auto;
+      margin-bottom: 2em;
+    }
+  }
+
+}
+

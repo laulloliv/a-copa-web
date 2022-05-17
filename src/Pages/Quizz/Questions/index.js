@@ -36,7 +36,12 @@ export default function ViewQuestions() {
         <div className="card-result">
           <p id="num">{props.nota}</p>
           <p id="result">{props.frase}</p>
-          <img src={props.img} alt={props.alt} height="150em"></img>
+          <img
+            id="img-result"
+            src={props.img}
+            alt={props.alt}
+            height="150em"
+          ></img>
           <div className="buttons">
             <button
               onClick={() => {
@@ -50,6 +55,7 @@ export default function ViewQuestions() {
               }}
             >
               <img
+                id="icon-reload"
                 src="https://img.icons8.com/ios-glyphs/25/000000/replay.png"
                 alt="load icon"
               />

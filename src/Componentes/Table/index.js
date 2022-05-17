@@ -7,7 +7,17 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
+import { makeStyles } from '@material-ui/styles'
+import { useTheme } from '@material-ui/core/styles'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import './style.scss'
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    width: '100%',
+    height: '100%'
+  }
+}))
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -55,9 +65,24 @@ const rows_thebest = [
 ]
 
 export function TableArtilheiros() {
+  const classes = useStyles
+  const theme = useTheme()
+  const matches = useMediaQuery('(min-width:1130px)')
+  const matches2 = useMediaQuery('(min-width:920px)')
+  console.log(matches)
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table
+        className={classes.root}
+        sx={
+          matches
+            ? { minWidth: 700 }
+            : matches2
+            ? { minWidth: 500 }
+            : { minWidth: 300 }
+        }
+        aria-label="customized table"
+      >
         <TableHead>
           <TableRow>
             <StyledTableCell>País</StyledTableCell>
@@ -82,9 +107,22 @@ export function TableArtilheiros() {
 }
 
 export function TableBestPlayers() {
+  const classes = useStyles
+  const theme = useTheme()
+  const matches = useMediaQuery('(min-width:1130px)')
+  const matches2 = useMediaQuery('(min-width:920px)')
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table
+        sx={
+          matches
+            ? { minWidth: 700 }
+            : matches2
+            ? { minWidth: 500 }
+            : { minWidth: 300 }
+        }
+        aria-label="customized table"
+      >
         <TableHead>
           <TableRow>
             <StyledTableCell>País</StyledTableCell>
